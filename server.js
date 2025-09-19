@@ -17,7 +17,7 @@ io.on("connection",(socket)=>{
     socket.on("chat",(msg)=>{
         console.log("msg received->", msg);
     });
-     socket.emit("chat", "thik hai badhiya");
+    socket.emit("chat", "thik hai badhiya");
 
 });
 server.listen(3000,()=>{

@@ -10,6 +10,11 @@
     <p><%=greet%></p>
     <script src="/socket.io/socket.io.js"></script>
     <script>
+        const privateMsg = {
+            senderId: 2,
+            receiverId:3,
+            msg:"hello how are you?"
+        }
         const socket = io();
         socket.emit("chat","how are you?");
         socket.on("chat",(msg)=>{
